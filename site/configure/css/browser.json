@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "require-run: ./async.js",
+        "require: site/configure/css/functions.styl",
+        "require: site/configure/css/vars.styl",
+        "require: site/configure/css/base.styl"
+    ]
+}

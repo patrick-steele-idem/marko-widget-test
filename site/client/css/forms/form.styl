@@ -1,0 +1,33 @@
+.form,
+.form > form
+  // Display
+  display: flex
+
+  // Flex
+  flex-flow: row wrap
+
+  // Width
+  width: 100%
+
+  // Margin
+  margin: 0 rem-calc(-5px)
+
+  > div.half, > div.full
+    // Margin
+    margin: rem-calc(5px)
+
+    > .error
+      // Display 
+      display: none
+
+  > div.half
+    // Width
+    width: calc(50% - 10px)
+
+  > div.full
+    // Width
+    width: 100%
+
+  .error > .error
+    // Display
+    display: block;

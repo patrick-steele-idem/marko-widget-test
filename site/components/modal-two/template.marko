@@ -1,0 +1,30 @@
+<modal width="550px" class="component-two" w-id="component-modal-two">
+  <!-- Component Two has w-bind on within the w-body transcluded content -->
+  <div w-bind>
+    <section>
+        <header>
+          <h1>Component Modal Two</h1>
+          <p>
+            Example to show usage of reusable & combinable components.
+          </p>
+        </header>
+        <section class="form">
+          <form w-id="component-two-form">
+            <div class=['half', data.firstNameError && 'error']>
+              <label>First Name</label>
+              <div class="error">${data.firstNameError}</div>
+              <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"/>
+            </div>
+            <div class=['half', data.lastNameError && 'error']>
+              <label>Last Name</label>
+              <div class="error">${data.lastNameError}</div>
+              <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" />
+            </div>
+            <div class="full">
+              <button type="button" class="rounded-button large green halo" w-id="change-state-two-button">Change State</button>
+            </div>
+          </form>
+        </section>
+    </section>
+  </div>
+</modal>

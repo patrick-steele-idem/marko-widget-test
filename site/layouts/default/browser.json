@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        "require: site/configure/css",
+        "require: jquery",
+        "require: site/client/css",
+        "require: site/components/header-bar",
+        "require: site/components/modal-group"
+    ]
+}

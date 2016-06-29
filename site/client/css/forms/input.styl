@@ -1,0 +1,66 @@
+input
+  // Display
+  display: block
+
+  // Width
+  height: rem-calc(40px)
+  width: 100%
+
+  // Margin + Padding
+  margin: 0
+  padding: rem-calc(8px) rem-calc(12px)
+
+  // Font
+  font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+  font-weight: 300
+  line-height: 20px
+  color: $dark-grey
+
+  // Border
+  border-radius: 3px
+  border: 1px solid rgba(0,0,0,0.30)
+
+  // Background
+  background-color: $white
+
+  &:focus
+    border-color: $light-blue;
+    outline: 0;
+
+  &::placeholder
+    color: #999;
+    font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+    font-weight: 300
+    line-height: 20px
+
+  &::-webkit-input-placeholder
+    color: #999;
+    font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+    font-weight: 300
+    line-height: 20px
+
+
+  &:-moz-placeholder /* Firefox 18- */
+    color: #999;
+    font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+    font-weight: 300
+    line-height: 20px
+
+
+  &::-moz-placeholder   /* Firefox 19+ */
+    color: #999;
+    font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+    font-weight: 300
+    line-height: 20px
+
+
+  &:-ms-input-placeholder
+    color: #999;
+    font-size: rem-calc(14px) // We need to set to 16px to avoid iOS "zoom"
+    font-weight: 300
+    line-height: 20px
+
+// Input Error
+.error > input
+  // Background
+  background-color: rgba(231, 22, 22, .17);

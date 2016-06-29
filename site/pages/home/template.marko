@@ -1,0 +1,15 @@
+<lasso-page name="Home" package-path="./browser.json" />
+
+<layout-use("site/layouts/default/template.marko") user=data.user rfi=data.rfi pageRefresh=data.pageRefresh>
+  <layout-put into="title">
+      Marko Widget Playground
+  </layout-put>
+  <layout-put into="content">
+    <section class="row home">
+      <h1>Homepage</h1>
+      <a title="Button Four" class="rounded-button small orange hover" data-modal-one-button>One!</a>
+      <a title="Button Five" class="rounded-button small orange hover" data-modal-two-button>Two!</a>
+      <a title="Button Six" class="rounded-button small orange hover" data-modal-three-button>Three!</a>
+    </section>
+  </layout-put>
+</layout-use>

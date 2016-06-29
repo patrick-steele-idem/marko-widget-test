@@ -1,0 +1,31 @@
+<!-- w-bind is on the outside of w-body transcluded content -->
+<div w-bind>
+  <modal width="550px" class="component-two" w-id="component-modal-one">
+    <section>
+      <header>
+        <h1>Component Modal One</h1>
+        <p>
+          Example to show usage of reusable & combinable components.
+        </p>
+      </header>
+      <section class="form">
+        <form w-id="component-one-form">
+          <div class=["full", data.loginError && 'error']>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"/>
+          </div>
+          <div class=["full", data.loginError && 'error']>
+            <label>Password</label>
+            <input type="password" name="password" id="password" placeholder="Create a password"/>
+          </div>
+          <div class="full">
+            <button type="button" title="Component Two Button" class="rounded-button large green halo" w-id="change-state-one-button">Change State</button>
+            <span class="note error" if(data.loginError)>
+              State loginError: ${data.loginError}
+            </span>
+          </div>
+        </form>
+      </section>
+    </section>
+  </modal>
+</div>

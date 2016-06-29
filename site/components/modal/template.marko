@@ -1,0 +1,7 @@
+<div class=['modal', data.visible && 'visible', data.class] w-bind>
+    <div class="modal-mask" w-onclick="handleMaskClick"/>
+    <div class="modal-container" style={width: data.width}>
+        <div class="close-modal" w-onClick="handleCloseClick"><div>+</div></div>
+        <div class="modal-body" w-id="body" w-body/>
+    </div>
+</div>

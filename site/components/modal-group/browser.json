@@ -1,0 +1,6 @@
+{
+    "dependencies": [
+        "require: site/components/modal-one",
+        "require: site/components/modal-two"
+    ]
+}
