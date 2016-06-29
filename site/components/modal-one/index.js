@@ -8,14 +8,16 @@ module.exports = require('marko-widgets').defineComponent({
   // Setup state variables
   getInitialState: function(input) {
     return {
-      loginError: false
+      loginError: false,
+      visible: input.visible === true
     };
   },
 
   // Setup template data on template load
   getTemplateData: function(state, input) {
     return {
-      loginError: state.loginError
+      loginError: state.loginError,
+      visible: state.visible
     };
   },
 
@@ -34,7 +36,7 @@ module.exports = require('marko-widgets').defineComponent({
 
     // Setup Pub Sub
     Pubsub.on('showModalOne', function(arg) {
-      modal.show();
+      self.setState('visible', true);
     });
   }
 });
